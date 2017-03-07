@@ -151,6 +151,7 @@ CreateSignalImplementation(OHContactsDataSourceDeselectedContactsSignal, NSSet<O
 - (void)_setupOnDataProviderFinishedLoadingSignalObserverForDataProvider:(id<OHContactsDataProviderProtocol>)dataProvider
 {
     [dataProvider.onContactsDataProviderFinishedLoadingSignal addObserver:self callback:^(typeof(self) self, id<OHContactsDataProviderProtocol> dataProvider) {
+        [self.allContacts removeAllObjects];
         [self.allContacts unionOrderedSet:dataProvider.contacts];
         [self.completedDataProviders addObject:dataProvider];
         if (self.completedDataProviders.count == self.dataProviders.count) {

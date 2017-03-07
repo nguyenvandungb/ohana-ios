@@ -10,16 +10,22 @@ DEPENDENCIES:
   - OCMock (~> 3.3)
   - Ohana (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libPhoneNumber-iOS
+    - OCMock
+    - UberSignals
+
 EXTERNAL SOURCES:
   Ohana:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   libPhoneNumber-iOS: 62a740e1ea5741060f5cec0f788b52071115cf31
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
-  Ohana: 2058a644c7240026aa16304a6d8c2899f95bfc93
+  Ohana: d659ac5fd4dd8cada2849bde0d0349bda5d4ad3c
   UberSignals: abd80d8aa926828e30b75d3bd79d6ed07e4ed08a
 
 PODFILE CHECKSUM: 8a134e8d5b5577591197f0fade46fc02338c6f83
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3
